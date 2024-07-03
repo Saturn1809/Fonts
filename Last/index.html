@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Last</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lasrease.css">
+    <link rel="stylesheet" href="last.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+        <div class="site-wrapper">
+            <div class="header-index">
+    
+                <header>
+                    <nav class="container navbar">
+    
+                        <div class="container-nav flex">
+                            <a href="/" class="navbar-logo"><img src="logo.png" alt="logo"></a>
+                            <button onclick="openNav()" class="navbar-toggler" type="button">
+                                <span class="fa-solid fa-bars"></span>
+                            </button>
+    
+                            <ul class="navbar-nav flex">
+                                <li><a href="/" class="nav-link">Home</a></li>
+                                <li><a href="/" class="nav-link">About</a></li>
+                                <li><a href="/" class="nav-link">Contact</a></li>
+                                <li class="dropdown">
+                                    <a href="/" class="nav-link dropdown-toggle">Pages</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="/" class="dropdown-item">Hairs</a></li>
+                                        <li><a href="/" class="dropdown-item">MakeUp</a></li>
+                                        <li><a href="/" class="dropdown-item">LipCare</a></li>
+                                        <li><a href="/" class="dropdown-item">SkinCare</a></li>
+                                        <li><a href="/" class="dropdown-item">FaceCare</a></li>
+                                        
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="nav-right flex">
+                            <i class="fa-solid fa-cart-shopping" id="cart"></i>
+                            <i onclick="open_search()" class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </nav>
+    
+    
+                    <aside id="mySidepanel" class="sidepanel">
+                        <div class="sidebar flex">
+                            <a href=""><img src="logo.png" alt="logo"></a>
+                            <button onclick="closeNav()" type="button" class="closebtn btn_hover1">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button> 
+                        </div>
+                        <div>
+                            <ul>
+                                <li><a href="/" class="nav-link ">Home</a></li>
+                                <li><a href="/" class="nav-link">About</a></li>
+                                <li><a href="/" class="nav-link">Contact</a></li>
+                                <li class="collapse-btn">
+                                    <a href="" class="nav-link plus_collapse" data-bs-toggle="collapse">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </a>
+                                    <div class="collapse" id="pages">
+                                        <ul>
+                                            <li><a href="/" class="nav-link">hair</a></li>
+                                            <li><a href="/" class="nav-link">nails</a></li>
+                                            <li><a href="/" class="nav-link">skin</a></li>
+                                            <li><a href="/" class="nav-link">face</a></li>
+                                            <li><a href="/" class="nav-link">lips</a></li>
+                                            <li><a href="/" class="nav-link">glow</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </aside>
+    
+                    <div id="search-bar">
+                        <div onclick="close_search()" class="btn_hover1">
+                            <i  class="fa solid fa-xmark"></i>
+                        </div>
+                        <form action="#" method="search">
+                            <input type="search" required placeholder="Search...">
+                            <button type="submit" class="btn_hover1">Search</button>
+                        </form>
+                    </div>
+    
+                </header>
+    
+                <section class="hero">
+    
+                    <div id="main-top">
+                        <div id="main-center">
+                            <div id="img-one" class="imagecontainer">
+                                <img  src="https://aromamagic.com/cdn/shop/articles/5-things-to-consider-when-buying-beauty-care-products_1800x.jpg?v=1689576745" alt="mod">
+                                
+                            </div>
+                            <div id="img-two" class="imagecontainer">
+                                <img  src=" https://img.freepik.com/premium-photo/ai-generated-ai-generative-photo-realistic-illustration-different-skin-body-care-products_95211-2116.jpg" alt="mod">
+                            </div>
+                            <div id="img-three" class="imagecontainer">
+                                <img  src="https://img.freepik.com/premium-photo/ai-generated-ai-generative-photo-realistic-illustration-different-skin-body-care-products_95211-2087.jpg" alt="mo">
+                                
+                            </div>
+                    
+                        </div>
+                    </div>
+                    
+    
+                    <div class="container">
+    
+                        
+    
+    
+    
+    
+                        <div>
+                            <div class="hero-social-icon flex">
+                                <a href="#"><i class="fa-brands fa-facebook" ></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram" ></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter" ></i></a>
+                                <hr>
+                            </div>
+                            <div class="center-data flex flex-col gap-1">
+    
+                                <div class="glamm-txt">
+                                    <div id="poster-txt"><span class="large-font">GLAMM UP LIKE A STAR</span></div>
+                                </div>
+    
+                                <!-- <h1>Glamm Up </h1>
+                                <h3>Like a Star</h3> -->
+                                <div class="center-btn flex gap-15 mt-1">
+                                    <a href="/" class="btn_hover1">Shop Now</a>
+                                    <a href="/" class="btn_hover1">Discover More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    
+            </div>
+    
+            <section class="feature">
+                <div class="container">
+                    <div class="flex">
+                        <div class="header-card">
+                            <div>
+                                <figure>
+                                    <img class="figure_img1" src="https://img.freepik.com/premium-photo/ecofriendly-natural-nourishing-hair-care-products-with-plants-table-concept-beautiful-healthy-hair-generate-ai_262708-9810.jpg" alt="img">
+    
+                                </figure>
+                                <h4>HairCare</h4>
+                                <p>From shampoos & conditioners to hair serums & hair oils, we have all the best hair care products for hair growth</p>
+    
+                            </div>
+                        </div>
+                        <div class="header-card">
+                            <div>
+                                <figure>
+                                    <img class="figure_img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPUyUQ-44uVfQIGJ70x2uC1LYflcqq5m324w&s" alt="img">
+    
+                                </figure>
+                                <h4>Nail</h4>
+                                <p>Get stunning nails with high-quality nail makeup products from MyGlamm. Shop from our wide range of nail products. </p>
+                                
+                            </div>
+                        </div>
+                        <div class="header-card">
+                            <div>
+                                <figure>
+                                    <img class="figure_img1" src="https://img.freepik.com/premium-photo/skin-care-products-pink-background-beauty-products-spa-ai-generated_848885-19.jpg" alt="img">
+    
+                                </figure>
+                                <h4>SkinCare</h4>
+                                <p>
+                                    All our products are vegan, cruelty-free and PETA approved, so you can use our products guilt-free. Go ahead!
+                                </p>
+                                
+                            </div>
+                        </div>
+                        <div class="header-card">
+                            <div>
+                                <figure>
+                                    <img class="figure_img1" src="https://img.freepik.com/premium-photo/beautiful-woman-skin-care-face-cream-studio-shot-background-isolated_741910-5120.jpg" alt="img">
+    
+                                </figure>
+                                <h4>FaceCare</h4>
+                                <p>At MyGlamm, we have an amazing range of Facecare products such as face masks suiting your skin type</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+    
+            <section class="logoipsum">
+                <div class="sl">
+                    <div class="slds">
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
+            
+            
+                        <div class="sld first">
+                            <img id="full" src="https://files.myglamm.com/site-images/original/1920-x-527-59.jpg" alt="">
+                            <img id="half" src="pop.jpg" alt="">
+                        </div>
+                        <div class="sld">
+                            <img id="full" src="https://files.myglamm.com/site-images/original/Sleek-Desktop---2240-x-614-48.jpg" alt="">
+                            <img id="half" src="mani.jpg" alt="">
+                        </div>
+                        <div class="sld">
+                            <img id="full" src="https://files.myglamm.com/site-images/original/1920-x-527---CTA-yes_3.gif" alt="">
+                            <img id="half" src="WhatsApp Image 2024-07-03 at 13.15.24_ef39feff.jpg" alt="">
+                        </div>
+                        <div class="sld">
+                            <img id="full" src="https://files.myglamm.com/site-images/original/1920x527---2024-07-01T103758994.jpg" alt="">
+                            <img id="half" src="bb.jpg" alt="">
+                        </div>
+            
+                        <div class="navi-auto">
+                            <div class="au-btn1"></div>
+                            <div class="au-btn2"></div>
+                            <div class="au-btn3"></div>
+                            <div class="au-btn4"></div>
+                        </div>
+            
+                    </div>
+            
+                    <div class="navi-mannual">
+            
+                        <label for="radio1" class="ma-btn"></label>
+                        <label for="radio2" class="ma-btn"></label>
+                        <label for="radio3" class="ma-btn"></label>
+                        <label for="radio4" class="ma-btn"></label>
+                    </div>
+            
+            
+                </div>
+               </section> 
+    
+    
+    
+    
+            <section class="about">
+                <div class="container">
+                    <div class="about-data flex-sb">
+                        <div class="w-50" id="w-5">
+                            <div class="flex about-title gap-1">
+                                <hr>
+                                <h5>BRAND STORY</h5>
+                            </div>    
+                                <h2>Best Indian Brand</h2>
+                                <p> Backed by one of Europe's largest natural beauty companies,
+                                    MyGlamm collaborated with global experts and makeup artists to bring about exciting
+                                    innovation in makeup to accomplish our single, focused goal - make looking glamorous effortless!
+                                </p>
+                            <div class="flex gap-1 mt-15">
+                                <i class="fa-solid fa-check"></i>
+                                <h5>100% Cruelty Free</h5>
+                            </div>
+                            <div class="flex gap-1 mt-15">
+                                <i class="fa-solid fa-check"></i>
+                                <h5>Best Quality Products</h5>
+                            </div>
+                            <div class="flex gap-20 mt-3">
+                                <a href="#" class="btn_hover1">Shop Now</a>
+                                <a href="#" class="btn_hover1">Discover More</a>
+                            </div>
+                        </div>
+                        <div class="w-50 about-imgs flex flex-center new">
+                            <div>
+                                <figure>
+                                    <img class="sd" src="https://s3-ap-southeast-1.amazonaws.com/myglamm.com/content/file-1505123709999-blobid1505123775162.jpg" alt="img">
+                                </figure>
+                            </div>
+                            <div class="ab-count flex flex-center">
+                                <div class="flex flex-center">
+                                    <h2>12</h2>
+                                    <h2>+</h2>
+                                </div>
+                                <p>year of experience </p>
+                            </div>
+                            <div class="about-hr flex gap-1">
+                                <hr>
+                                <h6>who we are?</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="launch">
+            <div class="launch-up">
+                <div class="right">
+                    <h1 >Latest Product launch <br><span>Available Now !</span></h1>
+                    <h3>Unlock Timeless Elegance : <br>Introducing Our Newest Luxury Collection</h3>
+                </div>
+               <div class="left">
+                <ul>
+                    <li>  <a  class ="b" href="#">Serums</a></li>
+                    <li>   <a href="#">Masks</a></li>
+                     <li> <a href="#">Cleansers</a> </li> 
+                     <li>  <a href="#">Sunscreen</a> </li>
+                     <li>  <a href="#">Toner</a> </li>
+                </ul>
+               </div>
+            </div>
+              <div class="slider">
+                <div class="list">
+                    <div class="item active">
+                        <img src="images/a1.jpg">
+                        <div class="content">
+                        <h2>Cleanser</h2>
+                        <h3> &#8377 199</h3>
+                        <a href="#">Add To Cart </a>
+                            
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/a2.jpg">
+                        <div class="content">
+                            <h2>Moisturizer</h2>
+                        <h3>&#8377 459</h3>
+                        <a href="#">Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/a3.jpg">
+                        <div class="content">
+                            <h2>Serum</h2>
+                        <h3>&#8377 355</h3>
+                        <a href="#">Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/a9.jpg">
+                        <div class="content">
+                            <h2>Toner</h2>
+                        <h3>&#8377 799</h3>
+                        <a href="#">Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/a8.jpg">
+                        <div class="content">
+                            <h2>Scrubber</h2>
+                        <h3> &#8377 249</h3>
+                        <a href="#">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrows">
+                    <button id="prev"><i class="ri-arrow-left-line"></i></button>
+                    <button id="next"><i class="ri-arrow-right-line"></i></button>
+                </div>
+                <!-- thumbnail -->
+                <div class="thumbnail">
+                    <div class="item active">
+                        <img src="images/a1.jpg">
+                        </div>
+                    <div class="item">
+                        <img src="images/a2.jpg">                        
+                    </div>
+                    <div class="item">
+                        <img src="images/a3.jpg">                        
+                    </div>
+                    <div class="item">
+                        <img src="images/a9.jpg">                
+                    </div>
+                    <div class="item">
+                        <img src="images/a8.jpg">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="bestseller">
+            <div class="best-right">
+                <h1 id="my-text" >Your <br> <span>Beauty Catalogue</span></h1>
+                <h3>Experience the Ultimate <br> Beauty Makeover</h3>
+                <a  class="btn" href="#">Shop Now</a>
+            </div>
+            <div class="best-left">
+                <div class="elem1">
+                    <img  src="images/a1.jpg" >
+                    <div class="content">
+                        <i id="me" class="ri-arrow-right-up-line"></i>
+                        <h3 class="al">Glow Serum <br> <span>&#8377 639 </span></h3>
+                    </div>
+                </div>
+                <div class="elem2">
+                    <img  src="images/a9.jpg" >                 
+                   <div class="content">
+                        <h3>Glow Serum <br><span>&#8377 639 </span></h6>                     
+                            <i id="me" class="ri-arrow-left-up-line"></i>
+                    </div>
+                </div>
+                <div class="elem3"> 
+                    <img  src="images/a3.jpg" >                   
+                    <div class="content">
+                        <h3>Glow Serum <br><span>&#8377 639 </span></h3>
+                        <i id="me" class="ri-arrow-right-up-line"></i>
+                    </div>
+                </div>
+                <div class="elem4">
+                    <img src="images/a4.jpg" >
+                    <div class="content">
+                        <i id="me" class="ri-arrow-left-up-line"></i>
+                        <h3 class="al" >Glow Serum <br><span>&#8377 639 </span> </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Category">
+            <div class="cat">
+                <h1>Shop By <span>Category</span></h1>
+                <h3>Discover Our Curated Categories for Every Need.</h3>
+                <a  class="m" href="#"> Explore More <i class="ri-arrow-right-up-line"></i></a>
+            </div>
+    
+    <div class="Types">
+        <div class="choice">
+        <img src="images/b1.jpg" alt="">
+        <a href="#">Hairs</a>
+        </div>
+        <div class="choice">
+            <img src="Images/b2.jpg" alt="">
+            <a href="#">Nails</a>
+        </div>
+        <div class="choice">
+            <img src="Images/b3.jpg" alt="">
+            <a href="#">Lips</a>
+        </div>
+        <div class="choice">
+            <img src="Images/b4.jpg" alt="">
+            <a href="#">Eyes</a>
+        </div>
+        <div class="choice">
+            <img src="Images/b5.jpg" alt=""> 
+            <a href="#">Face</a>
+        </div>
+        <div class="choice">
+            <img src="Images/b6.jpg" alt="">
+            <a href="#">Skin</a>
+    </div>
+    <div class="choice">
+        <img src="Images/b7.jpg" alt="">
+        <a href="#">Bath</a>
+</div>
+<div class="choice">
+    <img src="Images/b8.jpg" alt="">
+    <a href="#">Body</a>
+</div>  
+</div>
+        </div>
+        
+      </div>
+        <script src="https://unpkg.com/split-type"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
+        <script src="script.js"> </script>
+        <script src="last.js"></script>
+        <script>import Lenis from '@studio-freight/lenis'
+
+            const lenis = new Lenis({
+              duration: 1.2,
+              easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
+              direction: 'vertical', // vertical, horizontal
+              gestureDirection: 'vertical', // vertical, horizontal, both
+              smooth: true,
+              mouseMultiplier: 1,
+              smoothTouch: false,
+              touchMultiplier: 2,
+              infinite: false,
+            })
+            
+            //get scroll value
+            lenis.on('scroll', ({ scroll, limit, velocity, direction, progress }) => {
+              console.log({ scroll, limit, velocity, direction, progress })
+            })
+            
+            function raf(time) {
+              lenis.raf(time)
+              requestAnimationFrame(raf)
+            }
+            
+            requestAnimationFrame(raf)</script>
+        
+</body>
+</html>
